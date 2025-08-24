@@ -1,38 +1,25 @@
-# 🤖 DocTranslate AI
-Translate PDF documents into **structured Word files** using the power of AI.  
-DocTranslate AI analyzes your PDF’s layout, translates the content, and rebuilds it into a **clean, editable `.docx` file**.  
+📖 RAG-Based-Information-Retrieval-System
+
+🚀 This project demonstrates a **Retrieval-Augmented Generation (RAG) pipeline** that combines a **retriever** and a **large language model** to deliver **accurate, document-based answers**.  
+Unlike standard LLMs, this model responds **only on the basis of the information present in the provided documents** — ensuring factual accuracy and eliminating outside content.  
+
+📂 Document Retrieval → Efficiently fetches relevant information using vector search.
+---
+
+🤖 LLM-powered Generation → Generates accurate, context-aware answers.
+## 🚀 Features
+
+🛠️ Full-Stack Integration → Exposed as a seamless API / web interface for real-world use.
+- 🔍 **Efficient Retrieval**: Finds relevant documents from a knowledge base.  
+- 🧠 **Context-Aware Generation**: Uses LLMs to generate responses grounded in retrieved documents.  
+- ⚡ **Improved Accuracy**: Reduces hallucinations by augmenting the LLM with factual context.  
+- 🛠️ **Customizable**: Plug-and-play retrievers (e.g., FAISS, Pinecone) and LLMs (OpenAI, HuggingFace).  
 
 ---
 
-## ✨ Core Features
-- 🌐 **Multi-Language Translation** – Translate into dozens of languages  
-- 🏛️ **Structure Preservation** – Headings, lists, paragraphs, and tables remain intact  
-- 🤖 **AI-Powered** – Understands layout visually  
-- 📄 **Clean Output** – Generates well-formatted `.docx` files  
-- 🚀 **Simple to Use** – Straightforward command-line interface  
+## 🛠️ Tech Stack
 
----
-
-## 🛠️ Technology Stack
-- **Backend** → Python  
-- **PDF Processing** → PyMuPDF (fitz)  
-- **AI Model** → OpenAI GPT-4o mini  
-- **Document Generation** → Pandoc  
-- **API Communication** → httpx  
-
----
-
-## 💡 How It Works
-1. 🔍 **Analyze** → Convert each PDF page into a high-resolution image  
-2. 🧠 **Understand & Translate** → AI extracts text and translates it  
-3. 📝 **Structure** → AI outputs structured Markdown  
-4. 🏗️ **Rebuild** → Pandoc converts Markdown → `.docx`  
-
----
-
-## 📌 A Note on Perfection
-- ✅ Preserves **headings, lists, tables, paragraphs**  
-- ⚠️ Does **not** replicate exact design (fonts, columns, image placement)  
-- 🎯 Goal = **Readable, functional translation**, not pixel-perfect copy  
-
----
+- 🐍 Python 3  
+- 📖 LangChain  
+- 📦 FAISS / Pinecone  
+- 🧠 OpenAI API  
